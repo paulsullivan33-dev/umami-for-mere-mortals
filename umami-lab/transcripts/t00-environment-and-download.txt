@@ -1,0 +1,49 @@
+$ node --version
+v24.22.1
+$ npm --version
+10.9.4
+$ psql --version
+psql (PostgreSQL) 16.15 (Ubuntu 16.15-0ubuntu0.24.04.1)
+$ curl -sL -o umami-v3.4.1.tar.gz https://github.com/umami-software/umami/archive/refs/tags/v3.4.1.tar.gz
+-rw-rw---- 1 root root 1858861 Nov  1 02:27 umami-v3.4.1.tar.gz
+$ tar xzf umami-v3.4.1.tar.gz
+umami-3.4.1
+$ grep engines + key scripts from package.json
+name: umami version: 3.4.1
+engines: {'pnpm': '12.3.4'}
+script dev = dotenv next dev --turbo
+script build = npm-run-all check:env build:db check:db build:tracker build:recorder build:geo build:openapi build:packages build:app
+script start = next start
+script build:docker = npm-run-all build:db build:tracker build:recorder build:geo build:openapi build:packages build:app
+script start:docker = npm-run-all check:db update:tracker start:server
+script start:env = node scripts/start-env.js
+script start:server = node server.js
+script build:app = next build --turbo
+script build:icons = svgr ./src/assets --out-dir src/components/svg --typescript
+script build:components = node scripts/bump-components.js && tsup
+script build:tracker = npm-run-all check:tracker build:tracker:script build:tracker:types
+script build:tracker:script = rollup -c rollup.tracker.config.js
+script build:tracker:types = tsc -p tsconfig.tracker.types.json && biome format --write src/tracker/index.d.ts
+script check:tracker = tsc -p tsconfig.tracker.json --noEmit
+script build:recorder = rollup -c rollup.recorder.config.js
+script build:prisma:client = node scripts/build-prisma-client.js
+script build:languages = npm-run-all download:countries download:languages
+script build:geo = node scripts/build-geo.js
+script build:openapi = npm-run-all openapi:generate generate:api:client
+script build:db = npm-run-all generate:db:client build:prisma:client
+script db:pull = prisma db pull
+script generate:db:client = prisma generate
+script db:migrate = prisma migrate deploy
+script check:db = node scripts/check-db.js
+script check:env = node scripts/check-env.js
+script check:messages = node scripts/check-missing-messages.js
+script openapi:check = tsx scripts/check-openapi.ts
+script check:api:client = tsx scripts/generate-api-client.ts --check
+script build:packages = pnpm --filter "./packages/**" -r build
+script postbuild = node scripts/postbuild.js
+script db:seed = tsx scripts/seed-data.ts
+script check = biome check --write
+dep next 16.4.2
+dep react ^19.3.1
+dep prisma ^7.10.0
+dep @prisma/client ^7.10.0

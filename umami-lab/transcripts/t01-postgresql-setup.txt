@@ -1,0 +1,60 @@
+$ su postgres -c "/usr/lib/postgresql/16/bin/initdb -D ~/workspace/umami-labwork/pgdata -U umami_admin --auth=trust"
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+initdb: error: could not access directory "/home/hatch/workspace/umami-labwork/pgdata": Permission denied
+$ pg_ctl -D pgdata -l pg.log start (as postgres)
+pg_ctl: could not access directory "/home/hatch/workspace/umami-labwork/pgdata": Permission denied
+$ createdb -h 127.0.0.1 -p 55432 -U umami_admin umami
+createdb: error: connection to server at "127.0.0.1", port 55432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+$ psql -h 127.0.0.1 -p 55432 -U umami_admin -d umami -c "select version();"
+psql: error: connection to server at "127.0.0.1", port 55432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+psql: error: connection to server at "127.0.0.1", port 55432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+# First attempt failed: the postgres system user could not traverse
+# /home/hatch (mode rwxrws--- root:nogroup). Surgical fix: execute-only
+# ACLs for the postgres user on the three path components:
+$ setfacl -m u:postgres:--x /home/hatch /home/hatch/workspace /home/hatch/workspace/umami-labwork
+(traversal-ok confirmed)
+
+$ su postgres -c "initdb -D .../pgdata -U umami_admin --auth=trust"
+Data page checksums are disabled.
+
+initdb: error: directory "/home/hatch/workspace/umami-labwork/pgdata" exists but is not empty
+initdb: hint: If you want to create a new database system, either remove or empty the directory "/home/hatch/workspace/umami-labwork/pgdata" or run initdb with an argument other than "/home/hatch/workspace/umami-labwork/pgdata".
+$ append port/socket settings to pgdata/postgresql.conf
+port = 55432
+listen_addresses = '127.0.0.1'
+unix_socket_directories = '/home/hatch/workspace/umami-labwork/pgsocket'
+$ pg_ctl -D pgdata -l pg.log start (as postgres)
+pg_ctl: directory "/home/hatch/workspace/umami-labwork/pgdata" is not a database cluster directory
+$ createdb -h 127.0.0.1 -p 55432 -U umami_admin umami
+createdb: error: connection to server at "127.0.0.1", port 55432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+$ psql -h 127.0.0.1 -p 55432 -U umami_admin -d umami -c "select current_database(), current_user;" -c "show port;"
+psql: error: connection to server at "127.0.0.1", port 55432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+# The first, permission-denied initdb had already left files behind,
+# so the data directory was emptied and initdb run again:
+$ rm -rf pgdata/* ; su postgres -c "initdb ..."
+
+    /usr/lib/postgresql/16/bin/pg_ctl -D /home/hatch/workspace/umami-labwork/pgdata -l logfile start
+
+waiting for server to start.... done
+server started
+$ psql -h 127.0.0.1 -p 55432 -U umami_admin -d umami -c "select current_database(), current_user;" -c "show port;"
+ current_database | current_user 
+------------------+--------------
+ umami            | umami_admin
+(1 row)
+
+ port  
+-------
+ 55432
+(1 row)
+

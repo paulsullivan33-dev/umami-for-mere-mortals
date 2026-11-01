@@ -1,0 +1,11 @@
+$ tail of the server log while it ran:
+- Network:       http://198.19.0.2:18085
+✓ Ready in 292ms
+✓ Running next.config.ts took 353ms
+⚠ "next start" does not work with "output: standalone" configuration. Use "node .next/standalone/server.js" instead.
+$ stop the Umami server (next-server on 18085)
+$ stop the Umami server (killed the next-server PID on 18085)
+after stop: connection refused (server down)
+$ stop the lab PostgreSQL (pg_ctl stop)
+server stopped
+psql: error: connection to server at "127.0.0.1", port 55432 failed: Connection refused

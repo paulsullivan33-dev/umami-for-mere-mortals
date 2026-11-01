@@ -1,0 +1,239 @@
+$ pnpm run build:app   (next build --turbo)
+03:03:10
+$ next build --turbo
+▲ Next.js 16.4.2 (Turbopack)
+- Environments: .env
+✓ Running next.config.ts took 421ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 110s
+  Skipping validation of types
+  Finished TypeScript config validation in 218ms ...
+  Collecting page data using 3 workers ...
+✓ Finished writing to filesystem cache in 21.1s
+  Generating static pages using 3 workers (0/70) ...
+  Generating static pages using 3 workers (17/70) 
+  Generating static pages using 3 workers (34/70) 
+  Generating static pages using 3 workers (52/70) 
+✓ Generating static pages using 3 workers (70/70) in 2.1s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ƒ /_not-found
+├ ƒ /admin/security
+├ ƒ /admin/teams
+├ ƒ /admin/teams/[teamId]
+├ ƒ /admin/users
+├ ƒ /admin/users/[userId]
+├ ƒ /admin/websites
+├ ƒ /admin/websites/[websiteId]
+├ ƒ /api/2fa/disable
+├ ƒ /api/2fa/setup/cancel
+├ ƒ /api/2fa/setup/confirm
+├ ƒ /api/2fa/setup/initiate
+├ ƒ /api/2fa/status
+├ ƒ /api/2fa/verify
+├ ƒ /api/admin/2fa/global
+├ ƒ /api/admin/teams
+├ ƒ /api/admin/teams/[teamId]/2fa
+├ ƒ /api/admin/users
+├ ƒ /api/admin/users/[userId]/2fa
+├ ƒ /api/admin/websites
+├ ƒ /api/auth/login
+├ ƒ /api/auth/logout
+├ ƒ /api/auth/sso
+├ ƒ /api/auth/subscription
+├ ƒ /api/auth/verify
+├ ƒ /api/batch
+├ ƒ /api/boards
+├ ƒ /api/boards/[boardId]
+├ ƒ /api/boards/[boardId]/clone
+├ ƒ /api/boards/[boardId]/shares
+├ ƒ /api/config
+├ ƒ /api/dashboard
+├ ƒ /api/heartbeat
+├ ƒ /api/links
+├ ƒ /api/links/[linkId]
+├ ƒ /api/links/[linkId]/shares
+├ ƒ /api/links/charts
+├ ƒ /api/me
+├ ƒ /api/me/api-keys
+├ ƒ /api/me/api-keys/[keyId]
+├ ƒ /api/me/password
+├ ƒ /api/me/teams
+├ ƒ /api/me/websites
+├ ƒ /api/pixels
+├ ƒ /api/pixels/[pixelId]
+├ ƒ /api/pixels/[pixelId]/shares
+├ ƒ /api/pixels/charts
+├ ƒ /api/realtime/[websiteId]
+├ ƒ /api/record
+├ ƒ /api/scripts/telemetry
+├ ƒ /api/send
+├ ƒ /api/share
+├ ƒ /api/share/[slug]
+├ ƒ /api/share/id/[shareId]
+├ ƒ /api/teams
+├ ƒ /api/teams/[teamId]
+├ ƒ /api/teams/[teamId]/boards
+├ ƒ /api/teams/[teamId]/links
+├ ƒ /api/teams/[teamId]/pixels
+├ ƒ /api/teams/[teamId]/users
+├ ƒ /api/teams/[teamId]/users/[userId]
+├ ƒ /api/teams/[teamId]/websites
+├ ƒ /api/teams/join
+├ ƒ /api/users
+├ ƒ /api/users/[userId]
+├ ƒ /api/users/[userId]/teams
+├ ƒ /api/users/[userId]/websites
+├ ƒ /api/websites
+├ ƒ /api/websites/[websiteId]
+├ ƒ /api/websites/[websiteId]/active
+├ ƒ /api/websites/[websiteId]/annotations
+├ ƒ /api/websites/[websiteId]/annotations/[annotationId]
+├ ƒ /api/websites/[websiteId]/attribution
+├ ƒ /api/websites/[websiteId]/breakdown
+├ ƒ /api/websites/[websiteId]/daterange
+├ ƒ /api/websites/[websiteId]/event-data
+├ ƒ /api/websites/[websiteId]/event-data-pivot
+├ ƒ /api/websites/[websiteId]/event-data-pivot/array-series
+├ ƒ /api/websites/[websiteId]/event-data-pivot/date-series
+├ ƒ /api/websites/[websiteId]/event-data-pivot/numeric-series
+├ ƒ /api/websites/[websiteId]/event-data-pivot/numeric-stats
+├ ƒ /api/websites/[websiteId]/event-data-pivot/property-series
+├ ƒ /api/websites/[websiteId]/event-data/[eventId]
+├ ƒ /api/websites/[websiteId]/event-data/events
+├ ƒ /api/websites/[websiteId]/event-data/fields
+├ ƒ /api/websites/[websiteId]/event-data/properties
+├ ƒ /api/websites/[websiteId]/event-data/stats
+├ ƒ /api/websites/[websiteId]/event-data/values
+├ ƒ /api/websites/[websiteId]/events
+├ ƒ /api/websites/[websiteId]/events/series
+├ ƒ /api/websites/[websiteId]/events/stats
+├ ƒ /api/websites/[websiteId]/export
+├ ƒ /api/websites/[websiteId]/funnels
+├ ƒ /api/websites/[websiteId]/funnels/[funnelId]
+├ ƒ /api/websites/[websiteId]/funnels/[funnelId]/stats
+├ ƒ /api/websites/[websiteId]/funnels/stats
+├ ƒ /api/websites/[websiteId]/goals
+├ ƒ /api/websites/[websiteId]/goals/[goalId]
+├ ƒ /api/websites/[websiteId]/goals/[goalId]/stats
+├ ƒ /api/websites/[websiteId]/goals/stats
+├ ƒ /api/websites/[websiteId]/heatmaps
+├ ƒ /api/websites/[websiteId]/journeys
+├ ƒ /api/websites/[websiteId]/metrics
+├ ƒ /api/websites/[websiteId]/metrics/expanded
+├ ƒ /api/websites/[websiteId]/pageviews
+├ ƒ /api/websites/[websiteId]/performance/chart
+├ ƒ /api/websites/[websiteId]/performance/metrics
+├ ƒ /api/websites/[websiteId]/performance/stats
+├ ƒ /api/websites/[websiteId]/recorder
+├ ƒ /api/websites/[websiteId]/replays
+├ ƒ /api/websites/[websiteId]/replays/[replayId]
+├ ƒ /api/websites/[websiteId]/replays/saved
+├ ƒ /api/websites/[websiteId]/replays/saved/[replayId]
+├ ƒ /api/websites/[websiteId]/reset
+├ ƒ /api/websites/[websiteId]/retention
+├ ƒ /api/websites/[websiteId]/revenue/chart
+├ ƒ /api/websites/[websiteId]/revenue/metrics
+├ ƒ /api/websites/[websiteId]/revenue/sessions
+├ ƒ /api/websites/[websiteId]/revenue/stats
+├ ƒ /api/websites/[websiteId]/segments
+├ ƒ /api/websites/[websiteId]/segments/[segmentId]
+├ ƒ /api/websites/[websiteId]/session-data-pivot
+├ ƒ /api/websites/[websiteId]/session-data/array-series
+├ ƒ /api/websites/[websiteId]/session-data/date-series
+├ ƒ /api/websites/[websiteId]/session-data/numeric-series
+├ ƒ /api/websites/[websiteId]/session-data/numeric-stats
+├ ƒ /api/websites/[websiteId]/session-data/properties
+├ ƒ /api/websites/[websiteId]/session-data/property-series
+├ ƒ /api/websites/[websiteId]/session-data/stats
+├ ƒ /api/websites/[websiteId]/session-data/values
+├ ƒ /api/websites/[websiteId]/sessions
+├ ƒ /api/websites/[websiteId]/sessions/[sessionId]
+├ ƒ /api/websites/[websiteId]/sessions/[sessionId]/activity
+├ ƒ /api/websites/[websiteId]/sessions/[sessionId]/properties
+├ ƒ /api/websites/[websiteId]/sessions/[sessionId]/replays
+├ ƒ /api/websites/[websiteId]/sessions/stats
+├ ƒ /api/websites/[websiteId]/sessions/weekly
+├ ƒ /api/websites/[websiteId]/shares
+├ ƒ /api/websites/[websiteId]/stats
+├ ƒ /api/websites/[websiteId]/transfer
+├ ƒ /api/websites/[websiteId]/utm/metrics
+├ ƒ /api/websites/[websiteId]/values
+├ ƒ /api/websites/charts
+├ ƒ /boards
+├ ƒ /boards/[boardId]
+├ ƒ /boards/[boardId]/design
+├ ƒ /boards/[boardId]/edit
+├ ƒ /boards/create
+├ ƒ /compat/api/reports
+├ ƒ /compat/api/reports/[reportId]
+├ ƒ /compat/api/reports/attribution
+├ ƒ /compat/api/reports/breakdown
+├ ƒ /compat/api/reports/funnel
+├ ƒ /compat/api/reports/goal
+├ ƒ /compat/api/reports/heatmap
+├ ƒ /compat/api/reports/journey
+├ ƒ /compat/api/reports/performance
+├ ƒ /compat/api/reports/retention
+├ ƒ /compat/api/reports/revenue
+├ ƒ /compat/api/reports/utm
+├ ƒ /compat/api/websites/[websiteId]/reports
+├ ƒ /console/[websiteId]
+├ ƒ /dashboard
+├ ƒ /dashboard/edit
+├ ƒ /links
+├ ƒ /links/[linkId]
+├ ƒ /links/[linkId]/edit
+├ ƒ /login
+├ ƒ /login/two-factor
+├ ƒ /logout
+├ ƒ /mcp
+├ ƒ /p/[slug]
+├ ƒ /pixels
+├ ƒ /pixels/[pixelId]
+├ ƒ /pixels/[pixelId]/edit
+├ ƒ /q/[slug]
+├ ƒ /settings/api-keys
+├ ƒ /settings/preferences
+├ ƒ /settings/profile
+├ ƒ /settings/security
+├ ƒ /settings/teams
+├ ƒ /settings/teams/[teamId]
+├ ƒ /settings/websites
+├ ƒ /settings/websites/[websiteId]
+├ ƒ /share/[slug]/[[...path]]
+├ ƒ /sso
+├ ƒ /teams
+├ ƒ /websites
+├ ƒ /websites/[websiteId]
+├ ƒ /websites/[websiteId]/(.)replays/[sessionId]
+├ ƒ /websites/[websiteId]/(.)sessions/[sessionId]
+├ ƒ /websites/[websiteId]/attribution
+├ ƒ /websites/[websiteId]/breakdown
+├ ƒ /websites/[websiteId]/cohorts
+├ ƒ /websites/[websiteId]/compare
+├ ƒ /websites/[websiteId]/events
+├ ƒ /websites/[websiteId]/funnels
+├ ƒ /websites/[websiteId]/goals
+├ ƒ /websites/[websiteId]/heatmaps
+├ ƒ /websites/[websiteId]/journeys
+├ ƒ /websites/[websiteId]/performance
+├ ƒ /websites/[websiteId]/realtime
+├ ƒ /websites/[websiteId]/replays
+├ ƒ /websites/[websiteId]/replays/[replayId]
+├ ƒ /websites/[websiteId]/retention
+├ ƒ /websites/[websiteId]/revenue
+├ ƒ /websites/[websiteId]/segments
+├ ƒ /websites/[websiteId]/sessions
+├ ƒ /websites/[websiteId]/sessions/[sessionId]
+├ ƒ /websites/[websiteId]/settings
+└ ƒ /websites/[websiteId]/utm
+
+
+ƒ  (Dynamic)  server-rendered on demand
+
+build:app exit: 0
+03:05:28

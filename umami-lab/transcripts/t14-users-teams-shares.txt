@@ -1,0 +1,21 @@
+$ POST /api/users  (a second user, role read-only)
+{"error":{"message":"Bad request","code":"bad-request","status":400,"errors":[],"properties":{"role":{"errors":["Invalid option: expected one of \"admin\"|\"user\"|\"view-only\""]}}}}
+$ sign in as committee; GET /api/me/websites (owns nothing yet)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+KeyError: 'token'
+{"error":{"message":"Unauthorized","code":"unauthorized","status":401}}
+$ POST /api/teams  (make a team), add the website and the user
+[{"id":"8aefdb6a-a9f5-45be-a461-5a22b4881324","name":"Example Committee","accessCode":"team_oaeQvz7sT35I9mz4","logoUrl":null,"twoFactorRequired":false,"createdAt":"2026-11-01T03:07:22.633Z","updatedAt":"2026-11-01T03:07:22.633Z","deletedAt":null},{"id":"1fa68da9-55d7-4cea-9935-1be02817b28a","teamId":"8aefdb6a-a9f5-45be-a461-5a22b4881324","userId":"41e2b680-648e-4b09-bcd7-3e2b10c06264","role":"team-owner","createdAt":"2026-11-01T03:07:22.635Z","updatedAt":"2026-11-01T03:07:22.635Z"}]
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+TypeError: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+KeyError: 'id'
+/api/teams/websites
+/api/teams/users
+$ committee signs in again: GET /api/me/websites (the shared site appears)
+{"error":{"message":"Unauthorized","code":"unauthorized","status":401}}
+$ POST /api/websites/<id>/shares  (a public share link)
+{"error":{"message":"Bad request","code":"bad-request","status":400,"errors":[],"properties":{"name":{"errors":["Invalid input: expected string, received undefined"]}}}}

@@ -1,0 +1,6 @@
+$ curl -s http://127.0.0.1:18085/login | grep -o "<title>[^<]*</title>"
+<title>Login | Umami</title>
+$ curl -s http://127.0.0.1:18085/script.js | head -c 200
+!function(){"use strict";(t=>{const{screen:{width:e,height:a},navigator:{language:n,doNotTrack:r,msDoNotTrack:i},location:o,document:c,history:s,top:d,doNotTrack:l}=t,{currentScript:u,referrer:f}=c;if
+$ curl -s -X POST http://127.0.0.1:18085/api/auth/login -H "Content-Type: application/json" -d "{\"username\":\"admin\",\"password\":\"umami\"}"
+{"token":"bx8cn+EMNkse3UOdVk3eMW02itQapSGBkzc3vmTop6J/q21ke4VAmX2JKbWMtdBei6nyertG4B9f0jCDZ1TcKL3se/E4rpvS0jYYLaDIzNYDf9Zr2n38gioHVXfWV2S+jHZH4pXFALX4RbxsHDLnrvPcoxHOzfFoMgEIUfdpkr0Xaz3GGSrSuKunKtYJz/c9m4Hl2tQEBB5WTSzj3neYmFqdwvdzqnfaMS0z808s8zd1K2TGDd0DPeTvmms4PEqOEwRGepLB3ypugK976Qw+2OWxxfLZxnwSx9

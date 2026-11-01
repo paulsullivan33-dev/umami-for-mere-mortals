@@ -1,0 +1,16 @@
+# Website id issued by the API: b7ccefd2-6484-456f-8642-9371019c17c9
+# The tracking tag the dashboard offers for this website:
+<script defer src="http://127.0.0.1:18085/script.js" data-website-id="b7ccefd2-6484-456f-8642-9371019c17c9"></script>
+
+$ GET /api/websites/<id>/stats  (before any visit)
+{"pageviews":0,"visitors":0,"visits":0,"bounces":0,"totaltime":0,"comparison":{"pageviews":0,"visitors":0,"visits":0,"bounces":0,"totaltime":0}}
+$ POST /api/send  (one page view, sent the way script.js sends it)
+{"cache":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3ZWJzaXRlSWQiOiJiN2NjZWZkMi02NDg0LTQ1NmYtODY0Mi05MzcxMDE5YzE3YzkiLCJzZXNzaW9uSWQiOiIxNjNkZmJiZi1hNGNiLTUyNzgtOTQ4OS0zZjk1YjFlZTI2M2YiLCJ2aXNpdElkIjoiZTkwOTYwMGMtZTUxNC01ZGM5LWJkMzMtZmU5ODEzMDUxNzQ3IiwiaWF0IjoxNzkzNTAyNDExLCJ0eXBlIjoiY2FjaGUifQ.6sksdSmzkOoxojY3WzhlckbnQsK-hfOL_s2h6TLR4MI","sessionId":"163dfbbf-a4cb-5278-9489-3f95b1ee263f","visitId":"e909600c-e514-5dc9-bd33-fe9813051747"}
+$ POST /api/send  (a second page of the same visit)
+{"cache":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3ZWJzaXRlSWQiOiJiN2NjZWZkMi02NDg0LTQ1NmYtODY0Mi05MzcxMDE5YzE3YzkiLCJzZXNzaW9uSWQiOiIxNjNkZmJiZi1hNGNiLTUyNzgtOTQ4OS0zZjk1YjFlZTI2M2YiLCJ2aXNpdElkIjoiZTkwOTYwMGMtZTUxNC01ZGM5LWJkMzMtZmU5ODEzMDUxNzQ3IiwiaWF0IjoxNzkzNTAyNDExLCJ0eXBlIjoiY2FjaGUifQ.6sksdSmzkOoxojY3WzhlckbnQsK-hfOL_s2h6TLR4MI","sessionId":"163dfbbf-a4cb-5278-9489-3f95b1ee263f","visitId":"e909600c-e514-5dc9-bd33-fe9813051747"}
+$ GET /api/websites/<id>/stats  (after the visit)
+{"pageviews":2,"visitors":1,"visits":1,"bounces":0,"totaltime":0,"comparison":{"pageviews":0,"visitors":0,"visits":0,"bounces":0,"totaltime":0}}
+$ GET /api/websites/<id>/metrics?startAt&endAt&type=url  (which pages)
+{"error":{"message":"Bad request","code":"bad-request","status":400}}
+$ GET /api/websites/<id>/metrics?type=referrer
+[{"x":"duckduckgo.com","y":1}]

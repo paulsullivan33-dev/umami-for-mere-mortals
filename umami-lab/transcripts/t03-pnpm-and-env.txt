@@ -1,0 +1,21 @@
+$ corepack prepare pnpm@12.3.4 --activate
+/bin/bash: line 2: corepack: command not found
+$ corepack pnpm --version
+/bin/bash: line 3: corepack: command not found
+umami-3.4.1/prisma.config.ts
+import 'dotenv/config';
+import { defineConfig, env } from 'prisma/config';
+
+export default defineConfig({
+  datasource: {
+    url: env('DATABASE_URL'),
+  },
+});
+$ cat umami-3.4.1/.env
+DATABASE_URL=postgresql://umami_admin:lab-umami-pw-2026@127.0.0.1:55432/umami
+$ npm install --prefix ./pnpm-tool pnpm@12.3.4
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
+$ ./pnpm-tool/node_modules/.bin/pnpm --version
+12.3.4

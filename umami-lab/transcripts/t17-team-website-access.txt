@@ -1,0 +1,8 @@
+$ POST /api/websites {"name":"Example Team Site","domain":"example.org","teamId":<team>}
+{"id":"ae68b727-526b-46ce-9c09-db024afdb7b3","name":"Example Team Site","domain":"example.org","resetAt":null,"userId":null,"teamId":"8aefdb6a-a9f5-45be-a461-5a22b4881324","createdBy":"41e2b680-648e-4b09-bcd7-3e2b10c06264","createdAt":"2026-11-01T03:08:02.896Z","updatedAt":"2026-11-01T03:08:02.896Z","deletedAt":null,"recorderEnabled":false,"replayConfig":null,"shareId":null}
+$ committee: GET /api/me/websites?includeTeams=1
+{"data":[],"count":0,"page":1,"pageSize":20,"orderBy":"name"}
+$ committee: GET the team website stats (read access through the team)
+{"pageviews":0,"visitors":0,"visits":0,"bounces":0,"totaltime":0,"comparison":{"pageviews":0,"visitors":0,"visits":0,"bounces":0,"totaltime":0}}
+$ committee tries to create a website (view-only should refuse)
+{"error":{"message":"Unauthorized","code":"unauthorized","status":401}}

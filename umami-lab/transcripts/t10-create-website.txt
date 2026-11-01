@@ -1,0 +1,4 @@
+$ GET /api/me/websites  (before: expect an empty list)
+{"data":[],"count":0,"page":1,"pageSize":20,"orderBy":"name"}
+$ POST /api/websites {"name":"Example Site","domain":"example.com"}
+{"id":"b7ccefd2-6484-456f-8642-9371019c17c9","name":"Example Site","domain":"example.com","resetAt":null,"userId":"41e2b680-648e-4b09-bcd7-3e2b10c06264","teamId":null,"createdBy":"41e2b680-648e-4b09-bcd7-3e2b10c06264","createdAt":"2026-11-01T03:06:44.582Z","updatedAt":"2026-11-01T03:06:44.582Z","deletedAt":null,"recorderEnabled":false,"replayConfig":null,"shareId":null}

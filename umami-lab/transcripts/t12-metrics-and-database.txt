@@ -1,0 +1,45 @@
+$ GET metrics?type=path (pages), type=browser, type=os, type=country
+[{"x":"/","y":1},{"x":"/about","y":1}]
+[{"x":"firefox","y":1}]
+[]
+$ psql: the stored events
+ url_path | referrer_domain | event_type |         created_at         
+----------+-----------------+------------+----------------------------
+ /        | duckduckgo.com  |          1 | 2026-11-01 03:06:51.058+00
+ /about   |                 |          1 | 2026-11-01 03:06:51.143+00
+(2 rows)
+
+$ psql: the stored session (note what is and is not kept)
+ browser |  os   | device | language |  screen   | country 
+---------+-------+--------+----------+-----------+---------
+ firefox | Linux | laptop | en-GB    | 1920x1080 | 
+(1 row)
+
+
+
+
+# Addendum (captured with the lab cluster briefly restarted on a
+# spare port, the shared lab port having been taken by another lab
+# by then): the session table in full. Note there is no column
+# anywhere in it that could hold a visitor IP address.
+$ psql ... -c "\d session"
+                                Table "public.session"
+   Column    |            Type             | Collation | Nullable |      Default      
+-------------+-----------------------------+-----------+----------+-------------------
+ session_id  | uuid                        |           | not null | 
+ website_id  | uuid                        |           | not null | 
+ browser     | character varying(20)       |           |          | 
+ os          | character varying(20)       |           |          | 
+ device      | character varying(20)       |           |          | 
+ screen      | character varying(11)       |           |          | 
+ language    | character varying(35)       |           |          | 
+ country     | character(2)                |           |          | 
+ region      | character varying(20)       |           |          | 
+ city        | character varying(50)       |           |          | 
+ created_at  | timestamp(6) with time zone |           |          | CURRENT_TIMESTAMP
+ distinct_id | character varying(50)       |           |          | 
+Indexes:
+    "session_pkey" PRIMARY KEY, btree (session_id)
+    "session_created_at_idx" btree (created_at)
+    "session_website_id_created_at_browser_idx" btree (website_id, created_at, browser)
+    "session_website_id_created_at_city_idx" btree (website_id, created_at, city)

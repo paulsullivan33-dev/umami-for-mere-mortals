@@ -1,0 +1,586 @@
+$ pnpm install --store-dir ../pnpm-store --frozen-lockfile
+Scope: all 3 workspace projects
+? Verifying lockfile against supply-chain policies (1162 entries)...
+Progress: resolved 1023, reused 0, downloaded 1, added 0
+Progress: resolved 1023, reused 0, downloaded 7, added 0
+[WARN] Tarball download average speed 3 KiB/s (size 3 KiB) is below 50 KiB/s: https://registry.npmjs.org/postcss-custom-selectors/-/postcss-custom-selectors-9.0.1.tgz (GET)
+[WARN] Tarball download average speed 6 KiB/s (size 10 KiB) is below 50 KiB/s: https://registry.npmjs.org/whatwg-mimetype/-/whatwg-mimetype-5.0.0.tgz (GET)
+[WARN] Tarball download average speed 6 KiB/s (size 8 KiB) is below 50 KiB/s: https://registry.npmjs.org/normalize-package-data/-/normalize-package-data-2.5.0.tgz (GET)
+[WARN] Tarball download average speed 3 KiB/s (size 5 KiB) is below 50 KiB/s: https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz (GET)
+[WARN] Tarball download average speed 4 KiB/s (size 6 KiB) is below 50 KiB/s: https://registry.npmjs.org/@dicebear/pixel-art-neutral/-/pixel-art-neutral-9.4.3.tgz (GET)
+[WARN] Tarball download average speed 1 KiB/s (size 2 KiB) is below 50 KiB/s: https://registry.npmjs.org/path-exists/-/path-exists-4.0.0.tgz (GET)
+[WARN] Tarball download average speed 7 KiB/s (size 14 KiB) is below 50 KiB/s: https://registry.npmjs.org/@dicebear/toon-head/-/toon-head-9.4.3.tgz (GET)
+[WARN] Tarball download average speed 5 KiB/s (size 5 KiB) is below 50 KiB/s: https://registry.npmjs.org/memorystream/-/memorystream-0.3.1.tgz (GET)
+[WARN] Tarball download average speed 11 KiB/s (size 14 KiB) is below 50 KiB/s: https://registry.npmjs.org/minimatch/-/minimatch-5.1.9.tgz (GET)
+[WARN] Tarball download average speed 4 KiB/s (size 9 KiB) is below 50 KiB/s: https://registry.npmjs.org/is-symbol/-/is-symbol-1.1.1.tgz (GET)
+[WARN] Tarball download average speed 6 KiB/s (size 9 KiB) is below 50 KiB/s: https://registry.npmjs.org/@dicebear/dylan/-/dylan-9.4.3.tgz (GET)
+[WARN] Tarball download average speed 1 KiB/s (size 3 KiB) is below 50 KiB/s: https://registry.npmjs.org/parse-json/-/parse-json-8.3.0.tgz (GET)
+[WARN] Tarball download average speed 2 KiB/s (size 5 KiB) is below 50 KiB/s: https://registry.npmjs.org/side-channel-weakmap/-/side-channel-weakmap-1.0.2.tgz (GET)
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /home/hatch/workspace/umami-labwork/pnpm-store/v11
+  Virtual store is at:             node_modules/.pnpm
+[WARN] Tarball download average speed 24 KiB/s (size 33 KiB) is below 50 KiB/s: https://registry.npmjs.org/fraction.js/-/fraction.js-5.3.4.tgz (GET)
+[WARN] Tarball download average speed 3 KiB/s (size 8 KiB) is below 50 KiB/s: https://registry.npmjs.org/@svgr/babel-plugin-transform-svg-component/-/babel-plugin-transform-svg-component-8.0.0.tgz (GET)
+[WARN] Tarball download average speed 3 KiB/s (size 6 KiB) is below 50 KiB/s: https://registry.npmjs.org/is-array-buffer/-/is-array-buffer-3.0.5.tgz (GET)
+[WARN] Tarball download average speed 4 KiB/s (size 16 KiB) is below 50 KiB/s: https://registry.npmjs.org/ret/-/ret-0.5.0.tgz (GET)
+[WARN] Tarball download average speed 4 KiB/s (size 13 KiB) is below 50 KiB/s: https://registry.npmjs.org/debug/-/debug-4.4.3.tgz (GET)
+[WARN] Tarball download average speed 9 KiB/s (size 10 KiB) is below 50 KiB/s: https://registry.npmjs.org/@dicebear/pixel-art/-/pixel-art-9.4.3.tgz (GET)
+[WARN] Tarball download average speed 5 KiB/s (size 6 KiB) is below 50 KiB/s: https://registry.npmjs.org/math-intrinsics/-/math-intrinsics-1.1.0.tgz (GET)
+[WARN] Tarball download average speed 8 KiB/s (size 29 KiB) is below 50 KiB/s: https://registry.npmjs.org/chai/-/chai-6.2.2.tgz (GET)
+[WARN] Tarball download average speed 3 KiB/s (size 9 KiB) is below 50 KiB/s: https://registry.npmjs.org/thenby/-/thenby-1.4.1.tgz (GET)
+[WARN] Tarball download average speed 4 KiB/s (size 6 KiB) is below 50 KiB/s: https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.1.tgz (GET)
+[WARN] Tarball download average speed 8 KiB/s (size 13 KiB) is below 50 KiB/s: https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.29.7.tgz (GET)
+[WARN] Tarball download average speed 4 KiB/s (size 18 KiB) is below 50 KiB/s: https://registry.npmjs.org/minizlib/-/minizlib-3.1.0.tgz (GET)
+[WARN] Tarball download average speed 6 KiB/s (size 19 KiB) is below 50 KiB/s: https://registry.npmjs.org/object.assign/-/object.assign-4.1.7.tgz (GET)
+[WARN] Tarball download average speed 8 KiB/s (size 34 KiB) is below 50 KiB/s: https://registry.npmjs.org/@parcel/watcher/-/watcher-2.6.0.tgz (GET)
+[WARN] Tarball download average speed 10 KiB/s (size 63 KiB) is below 50 KiB/s: https://registry.npmjs.org/tr46/-/tr46-6.0.0.tgz (GET)
+[WARN] Tarball download average speed 9 KiB/s (size 30 KiB) is below 50 KiB/s: https://registry.npmjs.org/aria-query/-/aria-query-5.3.0.tgz (GET)
+[WARN] Tarball download average speed 13 KiB/s (size 81 KiB) is below 50 KiB/s: https://registry.npmjs.org/consola/-/consola-3.4.2.tgz (GET)
+[WARN] Tarball download average speed 27 KiB/s (size 141 KiB) is below 50 KiB/s: https://registry.npmjs.org/reselect/-/reselect-5.3.0.tgz (GET)
+[WARN] Tarball download average speed 28 KiB/s (size 183 KiB) is below 50 KiB/s: https://registry.npmjs.org/tsx/-/tsx-4.23.13.tgz (GET)
+[WARN] Tarball download average speed 43 KiB/s (size 177 KiB) is below 50 KiB/s: https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.1.18.tgz (GET)
+Update available! 12.3.4 → 12.16.1.
+Changelog: https://pnpm.io/v/12.16.1
+To update, run: curl -fsSL https://get.pnpm.io/install.sh | sh -
+Progress: resolved 1023, reused 0, downloaded 64, added 60
+Progress: resolved 1023, reused 0, downloaded 65, added 64
+[WARN] Request took 31937ms: https://registry.npmjs.org/@csstools%2Fmedia-query-list-parser
+[WARN] Request took 32323ms: https://registry.npmjs.org/@clickhouse%2Fclient
+[WARN] Request took 32384ms: https://registry.npmjs.org/@bramus%2Fspecificity
+[WARN] Request took 32779ms: https://registry.npmjs.org/@csstools%2Fcss-color-parser
+[WARN] Request took 33102ms: https://registry.npmjs.org/@csstools%2Fcss-parser-algorithms
+[WARN] Request took 33102ms: https://registry.npmjs.org/@csstools%2Fcss-calc
+[WARN] Request took 34852ms: https://registry.npmjs.org/@csstools%2Fcolor-helpers
+[WARN] Request took 34921ms: https://registry.npmjs.org/@csstools%2Fpostcss-font-format-keywords
+[WARN] Request took 34921ms: https://registry.npmjs.org/@csstools%2Fpostcss-content-alt-text
+[WARN] Request took 34922ms: https://registry.npmjs.org/@csstools%2Fcss-syntax-patches-for-csstree
+[WARN] Request took 35074ms: https://registry.npmjs.org/@base-ui%2Freact
+[WARN] Request took 35111ms: https://registry.npmjs.org/@csstools%2Fpostcss-exponential-functions
+[WARN] Request took 35366ms: https://registry.npmjs.org/@csstools%2Fpostcss-contrast-color-function
+[WARN] Request took 35383ms: https://registry.npmjs.org/@csstools%2Fcss-tokenizer
+[WARN] Request took 35388ms: https://registry.npmjs.org/@csstools%2Fpostcss-cascade-layers
+[WARN] Request took 35392ms: https://registry.npmjs.org/@csstools%2Fpostcss-color-mix-variadic-function-arguments
+[WARN] Request took 35397ms: https://registry.npmjs.org/@csstools%2Fpostcss-color-function
+[WARN] Request took 35419ms: https://registry.npmjs.org/@csstools%2Fpostcss-container-rule-prelude-list
+[WARN] Request took 35429ms: https://registry.npmjs.org/@csstools%2Fpostcss-color-mix-function
+Progress: resolved 1023, reused 0, downloaded 67, added 64
+[WARN] Request took 36882ms: https://registry.npmjs.org/@csstools%2Fpostcss-alpha-function
+[WARN] Request took 36956ms: https://registry.npmjs.org/@csstools%2Fpostcss-color-function-display-p3-linear
+[WARN] Request took 37341ms: https://registry.npmjs.org/@base-ui%2Futils
+[WARN] Request took 37800ms: https://registry.npmjs.org/@asamuzakjp%2Fdom-selector
+[WARN] Request took 38259ms: https://registry.npmjs.org/@csstools%2Fcascade-layer-name-parser
+[WARN] Request took 39228ms: https://registry.npmjs.org/@adobe%2Fcss-tools
+[WARN] Request took 39671ms: https://registry.npmjs.org/@asamuzakjp%2Fcss-color
+[WARN] Request took 40146ms: https://registry.npmjs.org/@babel%2Fcode-frame
+[WARN] Request took 40429ms: https://registry.npmjs.org/@babel%2Fcompat-data
+[WARN] Request took 40892ms: https://registry.npmjs.org/@babel%2Fhelper-compilation-targets
+[WARN] Request took 41099ms: https://registry.npmjs.org/@babel%2Ftraverse
+[WARN] Request took 42254ms: https://registry.npmjs.org/@babel%2Fcore
+[WARN] Request took 42700ms: https://registry.npmjs.org/@babel%2Ftemplate
+[WARN] Request took 42800ms: https://registry.npmjs.org/@babel%2Fhelper-globals
+[WARN] Request took 43490ms: https://registry.npmjs.org/@babel%2Fgenerator
+[WARN] Request took 43550ms: https://registry.npmjs.org/@babel%2Fhelpers
+[WARN] Request took 44144ms: https://registry.npmjs.org/@babel%2Fhelper-validator-option
+[WARN] Request took 44443ms: https://registry.npmjs.org/@babel%2Fhelper-module-imports
+[WARN] Request took 44443ms: https://registry.npmjs.org/@babel%2Fhelper-module-transforms
+Progress: resolved 1023, reused 0, downloaded 97, added 96
+[WARN] Request took 48158ms: https://registry.npmjs.org/@csstools%2Fpostcss-font-width-property
+Progress: resolved 1023, reused 0, downloaded 102, added 96
+Progress: resolved 1023, reused 0, downloaded 113, added 96
+Progress: resolved 1023, reused 0, downloaded 125, added 96
+Progress: resolved 1023, reused 0, downloaded 128, added 96
+Progress: resolved 1023, reused 0, downloaded 131, added 128
+Progress: resolved 1023, reused 0, downloaded 134, added 128
+Progress: resolved 1023, reused 0, downloaded 137, added 128
+[WARN] Tarball download average speed 28 KiB/s (size 43 KiB) is below 50 KiB/s: https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.8.tgz (GET)
+Progress: resolved 1023, reused 0, downloaded 157, added 128
+Progress: resolved 1023, reused 0, downloaded 160, added 160
+[WARN] Request took 20963ms: https://registry.npmjs.org/@emnapi%2Fwasi-threads
+[WARN] Request took 21998ms: https://registry.npmjs.org/@emnapi%2Fruntime
+[WARN] Request took 22233ms: https://registry.npmjs.org/@emnapi%2Fcore
+Progress: resolved 1023, reused 0, downloaded 166, added 160
+Progress: resolved 1023, reused 0, downloaded 168, added 160
+Progress: resolved 1023, reused 0, downloaded 175, added 160
+[WARN] Tarball download average speed 23 KiB/s (size 47 KiB) is below 50 KiB/s: https://registry.npmjs.org/@vitest/runner/-/runner-4.1.11.tgz (GET)
+Progress: resolved 1023, reused 0, downloaded 193, added 192
+Progress: resolved 1023, reused 0, downloaded 195, added 192
+Progress: resolved 1023, reused 0, downloaded 196, added 192
+Progress: resolved 1023, reused 0, downloaded 200, added 192
+[WARN] Request took 21450ms: https://registry.npmjs.org/@img%2Fsharp-libvips-linux-arm
+[WARN] Request took 24429ms: https://registry.npmjs.org/@img%2Fsharp-darwin-arm64
+[WARN] Request took 21323ms: https://registry.npmjs.org/@img%2Fsharp-libvips-linux-riscv64
+[WARN] Request took 22849ms: https://registry.npmjs.org/@img%2Fsharp-libvips-linux-arm64
+[WARN] Request took 20744ms: https://registry.npmjs.org/@img%2Fsharp-libvips-linux-s390x
+[WARN] Request took 20028ms: https://registry.npmjs.org/@img%2Fsharp-linux-arm
+[WARN] Tarball download average speed 46 KiB/s (size 50 KiB) is below 50 KiB/s: https://registry.npmjs.org/mlly/-/mlly-1.8.0.tgz (GET)
+[WARN] Request took 24295ms: https://registry.npmjs.org/@img%2Fsharp-darwin-x64
+[WARN] Request took 20852ms: https://registry.npmjs.org/@img%2Fsharp-libvips-linuxmusl-arm64
+[WARN] Request took 20418ms: https://registry.npmjs.org/@img%2Fsharp-linux-arm64
+[WARN] Request took 19110ms: https://registry.npmjs.org/@img%2Fsharp-linux-ppc64
+[WARN] Request took 24591ms: https://registry.npmjs.org/@img%2Fsharp-libvips-darwin-arm64
+[WARN] Request took 24817ms: https://registry.npmjs.org/@img%2Fsharp-freebsd-wasm32
+[WARN] Request took 22925ms: https://registry.npmjs.org/@img%2Fsharp-libvips-linux-ppc64
+[WARN] Tarball download average speed 34 KiB/s (size 75 KiB) is below 50 KiB/s: https://registry.npmjs.org/@types/react/-/react-19.3.0.tgz (GET)
+[WARN] Request took 24403ms: https://registry.npmjs.org/@img%2Fsharp-libvips-darwin-x64
+[WARN] Request took 22204ms: https://registry.npmjs.org/@img%2Fsharp-libvips-linuxmusl-x64
+[WARN] Request took 20898ms: https://registry.npmjs.org/@img%2Fsharp-linux-s390x
+[WARN] Request took 21229ms: https://registry.npmjs.org/@img%2Fsharp-linuxmusl-arm64
+[WARN] Request took 21191ms: https://registry.npmjs.org/@img%2Fsharp-linuxmusl-x64
+[WARN] Request took 21910ms: https://registry.npmjs.org/@electric-sql%2Fpglite-socket
+[WARN] Request took 19941ms: https://registry.npmjs.org/@img%2Fsharp-webcontainers-wasm32
+[WARN] Request took 20660ms: https://registry.npmjs.org/@img%2Fsharp-wasm32
+[WARN] Request took 19838ms: https://registry.npmjs.org/@img%2Fsharp-win32-ia32
+[WARN] Request took 21656ms: https://registry.npmjs.org/@electric-sql%2Fpglite-tools
+[WARN] Request took 20195ms: https://registry.npmjs.org/@img%2Fsharp-win32-arm64
+[WARN] Request took 20294ms: https://registry.npmjs.org/@img%2Fsharp-win32-x64
+[WARN] Request took 21912ms: https://registry.npmjs.org/@electric-sql%2Fpglite
+[WARN] Request took 23045ms: https://registry.npmjs.org/@img%2Fsharp-linux-riscv64
+Progress: resolved 1023, reused 0, downloaded 231, added 224
+Progress: resolved 1023, reused 0, downloaded 232, added 224
+Progress: resolved 1023, reused 0, downloaded 236, added 224
+Progress: resolved 1023, reused 0, downloaded 240, added 224
+Progress: resolved 1023, reused 0, downloaded 245, added 224
+Progress: resolved 1023, reused 0, downloaded 252, added 224
+Progress: resolved 1023, reused 0, downloaded 256, added 256
+[WARN] Request took 21178ms: https://registry.npmjs.org/@napi-rs%2Fwasm-runtime
+[WARN] Request took 22073ms: https://registry.npmjs.org/@formatjs%2Fintl-localematcher
+Progress: resolved 1023, reused 0, downloaded 260, added 256
+[WARN] Request took 24061ms: https://registry.npmjs.org/@next%2Fswc-darwin-arm64
+[WARN] Request took 24060ms: https://registry.npmjs.org/@next%2Fswc-darwin-x64
+[WARN] Request took 23996ms: https://registry.npmjs.org/@next%2Fswc-linux-arm64-gnu
+[WARN] Request took 24644ms: https://registry.npmjs.org/@next%2Fswc-linux-arm64-musl
+Progress: resolved 1023, reused 0, downloaded 264, added 256
+[WARN] Request took 25578ms: https://registry.npmjs.org/@next%2Fswc-linux-x64-musl
+Progress: resolved 1023, reused 0, downloaded 270, added 256
+[WARN] Request took 26893ms: https://registry.npmjs.org/@next%2Fswc-win32-arm64-msvc
+[WARN] Request took 26988ms: https://registry.npmjs.org/@next%2Fswc-win32-x64-msvc
+Progress: resolved 1023, reused 0, downloaded 278, added 256
+Progress: resolved 1023, reused 0, downloaded 280, added 256
+[WARN] Request took 28212ms: https://registry.npmjs.org/@parcel%2Fwatcher-android-arm64
+[WARN] Request took 27813ms: https://registry.npmjs.org/@parcel%2Fwatcher-darwin-x64
+[WARN] Request took 28053ms: https://registry.npmjs.org/@parcel%2Fwatcher-darwin-arm64
+[WARN] Request took 27397ms: https://registry.npmjs.org/@parcel%2Fwatcher-linux-arm-glibc
+[WARN] Request took 28065ms: https://registry.npmjs.org/@parcel%2Fwatcher-freebsd-x64
+[WARN] Request took 27101ms: https://registry.npmjs.org/@parcel%2Fwatcher-win32-arm64
+[WARN] Request took 27365ms: https://registry.npmjs.org/@parcel%2Fwatcher-linux-x64-musl
+[WARN] Request took 27724ms: https://registry.npmjs.org/@parcel%2Fwatcher-linux-arm64-musl
+[WARN] Request took 28134ms: https://registry.npmjs.org/@parcel%2Fwatcher-linux-arm-musl
+[WARN] Request took 28067ms: https://registry.npmjs.org/@parcel%2Fwatcher-linux-arm64-glibc
+Progress: resolved 1023, reused 0, downloaded 290, added 288
+[WARN] Request took 29091ms: https://registry.npmjs.org/@parcel%2Fwatcher-win32-x64
+Progress: resolved 1023, reused 0, downloaded 295, added 288
+Progress: resolved 1023, reused 0, downloaded 297, added 288
+Progress: resolved 1023, reused 0, downloaded 301, added 288
+Progress: resolved 1023, reused 0, downloaded 304, added 288
+Progress: resolved 1023, reused 0, downloaded 310, added 288
+Downloading @prisma/dev@0.24.17: 0.00 B/9.16 MB
+[WARN] Request took 36227ms: https://registry.npmjs.org/@mswjs%2Finterceptors
+[WARN] Request took 32142ms: https://registry.npmjs.org/@otplib%2Fplugin-base32-scure
+[WARN] Request took 37370ms: https://registry.npmjs.org/@next%2Fenv
+[WARN] Request took 24910ms: https://registry.npmjs.org/@otplib%2Fplugin-crypto-noble
+[WARN] Request took 25565ms: https://registry.npmjs.org/@otplib%2Fhotp
+[WARN] Request took 26081ms: https://registry.npmjs.org/@otplib%2Fcore
+[WARN] Request took 25003ms: https://registry.npmjs.org/@otplib%2Ftotp
+[WARN] Request took 24486ms: https://registry.npmjs.org/@otplib%2Furi
+[WARN] Tarball download average speed 37 KiB/s (size 38 KiB) is below 50 KiB/s: https://registry.npmjs.org/pg-protocol/-/pg-protocol-1.15.0.tgz (GET)
+Progress: resolved 1023, reused 0, downloaded 332, added 320
+Progress: resolved 1023, reused 0, downloaded 334, added 320
+Downloading @prisma/dev@0.24.17: 4.27 MB/9.16 MB
+Downloading @prisma/dev@0.24.17: 5.58 MB/9.16 MB
+Downloading @prisma/dev@0.24.17: 6.63 MB/9.16 MB
+Downloading @prisma/dev@0.24.17: 7.63 MB/9.16 MB
+Downloading @prisma/dev@0.24.17: 8.78 MB/9.16 MB
+Progress: resolved 1023, reused 0, downloaded 348, added 320
+[WARN] Request took 22885ms: https://registry.npmjs.org/@formatjs%2Fintl-localematcher
+[WARN] Request took 31483ms: https://registry.npmjs.org/@playwright%2Ftest
+[WARN] Request took 25568ms: https://registry.npmjs.org/@next%2Fswc-linux-arm64-gnu
+[WARN] Request took 22157ms: https://registry.npmjs.org/@rolldown%2Fbinding-darwin-x64
+[WARN] Request took 19349ms: https://registry.npmjs.org/@rolldown%2Fbinding-linux-s390x-gnu
+[WARN] Request took 22290ms: https://registry.npmjs.org/@rolldown%2Fbinding-linux-arm64-gnu
+[WARN] Request took 24120ms: https://registry.npmjs.org/@rolldown%2Fbinding-darwin-arm64
+[WARN] Request took 22054ms: https://registry.npmjs.org/@rolldown%2Fbinding-linux-arm64-musl
+[WARN] Request took 23168ms: https://registry.npmjs.org/@rolldown%2Fbinding-linux-arm-gnueabihf
+[WARN] Request took 23171ms: https://registry.npmjs.org/@rolldown%2Fbinding-freebsd-x64
+[WARN] Request took 25782ms: https://registry.npmjs.org/@rolldown%2Fbinding-android-arm64
+[WARN] Request took 22016ms: https://registry.npmjs.org/@rolldown%2Fbinding-linux-ppc64-gnu
+[WARN] Request took 20987ms: https://registry.npmjs.org/@rolldown%2Fbinding-openharmony-arm64
+[WARN] Request took 21368ms: https://registry.npmjs.org/@rolldown%2Fbinding-linux-x64-musl
+Progress: resolved 1023, reused 0, downloaded 363, added 352
+Progress: resolved 1023, reused 0, downloaded 365, added 352
+Progress: resolved 1023, reused 0, downloaded 366, added 352
+[WARN] Request took 32232ms: https://registry.npmjs.org/@rolldown%2Fbinding-win32-arm64-msvc
+[WARN] Request took 32454ms: https://registry.npmjs.org/@rolldown%2Fbinding-wasm32-wasi
+[WARN] Request took 32526ms: https://registry.npmjs.org/@rolldown%2Fbinding-win32-x64-msvc
+Progress: resolved 1023, reused 0, downloaded 369, added 352
+[WARN] Request took 28364ms: https://registry.npmjs.org/@rollup%2Frollup-linux-loong64-gnu
+Progress: resolved 1023, reused 0, downloaded 379, added 352
+Progress: resolved 1023, reused 0, downloaded 380, added 352
+[WARN] Request took 71708ms: https://registry.npmjs.org/@next%2Fswc-linux-x64-gnu
+[WARN] Request took 30058ms: https://registry.npmjs.org/@rollup%2Frollup-win32-arm64-msvc
+[WARN] Request took 37262ms: https://registry.npmjs.org/@rollup%2Frollup-darwin-arm64
+[WARN] Request took 37650ms: https://registry.npmjs.org/@rollup%2Frollup-android-arm-eabi
+[WARN] Request took 37492ms: https://registry.npmjs.org/@rollup%2Frollup-darwin-x64
+[WARN] Request took 38602ms: https://registry.npmjs.org/@rollup%2Frollup-android-arm64
+[WARN] Request took 38399ms: https://registry.npmjs.org/@rollup%2Frollup-freebsd-arm64
+[WARN] Request took 38493ms: https://registry.npmjs.org/@rollup%2Frollup-freebsd-x64
+[WARN] Request took 35676ms: https://registry.npmjs.org/@rollup%2Frollup-linux-ppc64-gnu
+[WARN] Request took 38993ms: https://registry.npmjs.org/@rollup%2Frollup-linux-arm-musleabihf
+[WARN] Request took 35217ms: https://registry.npmjs.org/@rollup%2Frollup-linux-s390x-gnu
+[WARN] Request took 39147ms: https://registry.npmjs.org/@rollup%2Frollup-linux-arm-gnueabihf
+[WARN] Request took 35523ms: https://registry.npmjs.org/@rollup%2Frollup-linux-riscv64-gnu
+[WARN] Request took 39139ms: https://registry.npmjs.org/@rollup%2Frollup-linux-arm64-gnu
+[WARN] Request took 36263ms: https://registry.npmjs.org/@rollup%2Frollup-linux-loong64-musl
+[WARN] Request took 38814ms: https://registry.npmjs.org/@rollup%2Frollup-linux-arm64-musl
+[WARN] Request took 34146ms: https://registry.npmjs.org/@rollup%2Frollup-openbsd-x64
+[WARN] Request took 34166ms: https://registry.npmjs.org/@rollup%2Frollup-linux-x64-musl
+[WARN] Request took 36108ms: https://registry.npmjs.org/@rollup%2Frollup-linux-riscv64-musl
+[WARN] Request took 34634ms: https://registry.npmjs.org/@rollup%2Frollup-openharmony-arm64
+Progress: resolved 1023, reused 0, downloaded 397, added 384
+[WARN] Request took 36951ms: https://registry.npmjs.org/@rollup%2Frollup-win32-ia32-msvc
+Progress: resolved 1023, reused 0, downloaded 402, added 384
+[WARN] Request took 35972ms: https://registry.npmjs.org/@rollup%2Frollup-win32-x64-gnu
+[WARN] Request took 33431ms: https://registry.npmjs.org/@rollup%2Frollup-win32-x64-msvc
+[WARN] Tarball download average speed 45 KiB/s (size 49 KiB) is below 50 KiB/s: https://registry.npmjs.org/qrcode/-/qrcode-1.5.4.tgz (GET)
+[WARN] Tarball download average speed 43 KiB/s (size 290 KiB) is below 50 KiB/s: https://registry.npmjs.org/graphql/-/graphql-16.14.0.tgz (GET)
+Progress: resolved 1023, reused 0, downloaded 413, added 384
+Progress: resolved 1023, reused 0, downloaded 414, added 384
+Progress: resolved 1023, reused 0, downloaded 416, added 416
+Progress: resolved 1023, reused 0, downloaded 417, added 416
+Progress: resolved 1023, reused 0, downloaded 420, added 416
+Progress: resolved 1023, reused 0, downloaded 423, added 416
+[WARN] Request took 30222ms: https://registry.npmjs.org/@swc%2Fcore-linux-ppc64-gnu
+[WARN] Request took 30781ms: https://registry.npmjs.org/@swc%2Fcore-linux-arm-gnueabihf
+[WARN] Request took 30905ms: https://registry.npmjs.org/@swc%2Fcore-darwin-x64
+[WARN] Request took 30773ms: https://registry.npmjs.org/@swc%2Fcore-linux-arm64-gnu
+[WARN] Request took 30558ms: https://registry.npmjs.org/@swc%2Fcore-linux-arm64-musl
+[WARN] Request took 30393ms: https://registry.npmjs.org/@swc%2Fcore-linux-s390x-gnu
+[WARN] Request took 33648ms: https://registry.npmjs.org/@swc%2Fcore-darwin-arm64
+[WARN] Request took 34397ms: https://registry.npmjs.org/@swc%2Fcore-linux-x64-musl
+Progress: resolved 1023, reused 0, downloaded 429, added 416
+[WARN] GET https://registry.npmjs.org/type-fest/-/type-fest-4.41.0.tgz error (Failed to fetch https://registry.npmjs.org/type-fest/-/type-fest-4.41.0.tgz: error sending request for url (https://registry.npmjs.org/type-fest/-/type-fest-4.41.0.tgz): client error (SendRequest): connection error: peer closed connection without sending TLS close_notify: https://docs.rs/rustls/latest/rustls/manual/_03_howto/index.html#unexpected-eof) — 1
+Will retry in 10s. 1 retries left.
+Progress: resolved 1023, reused 0, downloaded 432, added 416
+Progress: resolved 1023, reused 0, downloaded 433, added 416
+[WARN] Request took 45512ms: https://registry.npmjs.org/@swc%2Fcore-win32-arm64-msvc
+[WARN] Request took 19192ms: https://registry.npmjs.org/@swc%2Fcore-linux-x64-gnu
+[WARN] Request took 46111ms: https://registry.npmjs.org/@swc%2Fcore-win32-ia32-msvc
+[WARN] Tarball download average speed 26 KiB/s (size 88 KiB) is below 50 KiB/s: https://registry.npmjs.org/@base-ui/utils/-/utils-0.4.0.tgz (GET)
+[WARN] Request took 46611ms: https://registry.npmjs.org/@swc%2Fcore-win32-x64-msvc
+Downloading @electric-sql/pglite@0.4.3: 0.00 B/8.29 MB
+Downloading @electric-sql/pglite@0.4.3: 409.60 kB/8.29 MB
+[WARN] Request took 82438ms: https://registry.npmjs.org/@rollup%2Frollup-linux-ppc64-musl
+Downloading @electric-sql/pglite@0.4.3: 868.34 kB/8.29 MB
+Progress: resolved 1023, reused 0, downloaded 455, added 448
+[WARN] Request took 36188ms: https://registry.npmjs.org/@tybys%2Fwasm-util
+[WARN] Request took 48368ms: https://registry.npmjs.org/@rollup%2Frollup-linux-x64-gnu
+Downloading @electric-sql/pglite@0.4.3: 2.67 MB/8.29 MB
+Downloading @electric-sql/pglite@0.4.3: 6.30 MB/8.29 MB
+Progress: resolved 1023, reused 0, downloaded 462, added 448
+Progress: resolved 1023, reused 0, downloaded 463, added 448
+Progress: resolved 1023, reused 0, downloaded 473, added 448
+Progress: resolved 1023, reused 0, downloaded 474, added 448
+Downloading @prisma/studio-core@0.33.0: 0.00 B/10.12 MB
+[WARN] Request took 17971ms: https://registry.npmjs.org/@swc%2Fcore
+Downloading @prisma/studio-core@0.33.0: 1.33 MB/10.12 MB
+Downloading @prisma/studio-core@0.33.0: 1.85 MB/10.12 MB
+Downloading @prisma/studio-core@0.33.0: 4.88 MB/10.12 MB
+Downloading @prisma/studio-core@0.33.0: 5.63 MB/10.12 MB
+Downloading @prisma/studio-core@0.33.0: 6.73 MB/10.12 MB
+Downloading @prisma/studio-core@0.33.0: 7.88 MB/10.12 MB
+Progress: resolved 1023, reused 0, downloaded 505, added 480
+Progress: resolved 1023, reused 0, downloaded 517, added 512
+Progress: resolved 1023, reused 0, downloaded 524, added 512
+Progress: resolved 1023, reused 0, downloaded 529, added 512
+Progress: resolved 1023, reused 0, downloaded 536, added 512
+Progress: resolved 1023, reused 0, downloaded 537, added 512
+Progress: resolved 1023, reused 0, downloaded 544, added 544
+Progress: resolved 1023, reused 0, downloaded 546, added 544
+Progress: resolved 1023, reused 0, downloaded 554, added 544
+Progress: resolved 1023, reused 0, downloaded 556, added 544
+Progress: resolved 1023, reused 0, downloaded 560, added 544
+Progress: resolved 1023, reused 0, downloaded 564, added 544
+Progress: resolved 1023, reused 0, downloaded 569, added 544
+Progress: resolved 1023, reused 0, downloaded 572, added 544
+Progress: resolved 1023, reused 0, downloaded 578, added 576
+[WARN] Tarball download average speed 45 KiB/s (size 84 KiB) is below 50 KiB/s: https://registry.npmjs.org/tsup/-/tsup-8.5.1.tgz (GET)
+Progress: resolved 1023, reused 0, downloaded 583, added 576
+Progress: resolved 1023, reused 0, downloaded 588, added 576
+Progress: resolved 1023, reused 0, downloaded 597, added 576
+Progress: resolved 1023, reused 0, downloaded 601, added 576
+Progress: resolved 1023, reused 0, downloaded 602, added 576
+Progress: resolved 1023, reused 0, downloaded 606, added 576
+Progress: resolved 1023, reused 0, downloaded 611, added 608
+Progress: resolved 1023, reused 0, downloaded 614, added 608
+Progress: resolved 1023, reused 0, downloaded 620, added 608
+Progress: resolved 1023, reused 0, downloaded 622, added 608
+Progress: resolved 1023, reused 0, downloaded 630, added 608
+Downloading @prisma/client@7.10.0: 0.00 B/26.82 MB
+Downloading @prisma/client@7.10.0: 379.96 kB/26.82 MB
+Downloading @prisma/client@7.10.0: 1.61 MB/26.82 MB
+Downloading @prisma/client@7.10.0: 2.88 MB/26.82 MB
+Downloading @prisma/client@7.10.0: 4.03 MB/26.82 MB
+Progress: resolved 1023, reused 0, downloaded 636, added 608
+Downloading @prisma/client@7.10.0: 5.73 MB/26.82 MB
+Progress: resolved 1023, reused 0, downloaded 643, added 640
+Downloading @prisma/client@7.10.0: 16.36 MB/26.82 MB
+Progress: resolved 1023, reused 0, downloaded 650, added 640
+Downloading @prisma/client@7.10.0: 20.45 MB/26.82 MB
+Progress: resolved 1023, reused 0, downloaded 659, added 640
+Downloading @prisma/client@7.10.0: 26.12 MB/26.82 MB
+Progress: resolved 1023, reused 0, downloaded 665, added 640
+Progress: resolved 1023, reused 0, downloaded 667, added 640
+Progress: resolved 1023, reused 0, downloaded 673, added 672
+Progress: resolved 1023, reused 0, downloaded 675, added 672
+Progress: resolved 1023, reused 0, downloaded 676, added 672
+Progress: resolved 1023, reused 0, downloaded 678, added 672
+Progress: resolved 1023, reused 0, downloaded 684, added 672
+Progress: resolved 1023, reused 0, downloaded 693, added 672
+[WARN] Request took 27097ms: https://registry.npmjs.org/electron-to-chromium
+Downloading @swc/core-linux-x64-gnu@1.15.46: 0.00 B/12.04 MB
+Progress: resolved 1023, reused 0, downloaded 702, added 672
+Progress: resolved 1023, reused 0, downloaded 707, added 704
+Progress: resolved 1023, reused 0, downloaded 708, added 704
+Progress: resolved 1023, reused 0, downloaded 713, added 704
+Downloading @swc/core-linux-x64-gnu@1.15.46: 1.63 MB/12.04 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 0.00 B/35.23 MB
+Progress: resolved 1023, reused 0, downloaded 724, added 704
+Downloading @swc/core-linux-x64-gnu@1.15.46: 4.52 MB/12.04 MB
+Downloading @swc/core-linux-x64-gnu@1.15.46: 5.21 MB/12.04 MB
+Downloading @swc/core-linux-x64-gnu@1.15.46: 5.60 MB/12.04 MB
+Downloading @swc/core-linux-x64-gnu@1.15.46: 6.35 MB/12.04 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 3.91 MB/35.23 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 5.17 MB/35.23 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 5.98 MB/35.23 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 7.34 MB/35.23 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 8.68 MB/35.23 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 10.05 MB/35.23 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 12.15 MB/35.23 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 13.12 MB/35.23 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 16.08 MB/35.23 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 17.69 MB/35.23 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 22.24 MB/35.23 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 22.56 MB/35.23 MB
+Progress: resolved 1023, reused 0, downloaded 746, added 736
+Downloading @next/swc-linux-x64-gnu@16.4.2: 29.86 MB/35.23 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 31.82 MB/35.23 MB
+Downloading @next/swc-linux-x64-gnu@16.4.2: 33.63 MB/35.23 MB
+Progress: resolved 1023, reused 0, downloaded 767, added 750
+Progress: resolved 1023, reused 0, downloaded 770, added 768
+Progress: resolved 1023, reused 0, downloaded 771, added 768
+Progress: resolved 1023, reused 0, downloaded 772, added 768
+[WARN] Request took 32431ms: https://registry.npmjs.org/lightningcss-android-arm64
+[WARN] Request took 31818ms: https://registry.npmjs.org/lightningcss-freebsd-x64
+[WARN] Request took 32369ms: https://registry.npmjs.org/lightningcss-darwin-x64
+[WARN] Request took 32977ms: https://registry.npmjs.org/lightningcss-darwin-arm64
+[WARN] Request took 32252ms: https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf
+[WARN] Request took 31685ms: https://registry.npmjs.org/lightningcss-linux-arm64-gnu
+[WARN] Request took 31708ms: https://registry.npmjs.org/lightningcss-linux-arm64-musl
+[WARN] Request took 31548ms: https://registry.npmjs.org/lightningcss-win32-arm64-msvc
+[WARN] Request took 32206ms: https://registry.npmjs.org/lightningcss-linux-x64-musl
+[WARN] Request took 32815ms: https://registry.npmjs.org/lightningcss-win32-x64-msvc
+Progress: resolved 1023, reused 0, downloaded 786, added 768
+Progress: resolved 1023, reused 0, downloaded 789, added 768
+Progress: resolved 1023, reused 0, downloaded 793, added 768
+Progress: resolved 1023, reused 0, downloaded 797, added 768
+Progress: resolved 1023, reused 0, downloaded 803, added 800
+Progress: resolved 1023, reused 0, downloaded 804, added 800
+Progress: resolved 1023, reused 0, downloaded 806, added 800
+Progress: resolved 1023, reused 0, downloaded 809, added 800
+Progress: resolved 1023, reused 0, downloaded 811, added 800
+Progress: resolved 1023, reused 0, downloaded 814, added 800
+Progress: resolved 1023, reused 0, downloaded 816, added 800
+Progress: resolved 1023, reused 0, downloaded 819, added 800
+Progress: resolved 1023, reused 0, downloaded 826, added 800
+[WARN] Tarball download average speed 18 KiB/s (size 20 KiB) is below 50 KiB/s: https://registry.npmjs.org/react-simple-maps/-/react-simple-maps-3.0.0.tgz (GET)
+Downloading @rolldown/binding-linux-x64-gnu@1.1.5: 0.00 B/7.79 MB
+Downloading @rolldown/binding-linux-x64-gnu@1.1.5: 1.27 MB/7.79 MB
+Downloading @rolldown/binding-linux-x64-gnu@1.1.5: 3.52 MB/7.79 MB
+Downloading @rolldown/binding-linux-x64-gnu@1.1.5: 6.78 MB/7.79 MB
+Progress: resolved 1023, reused 0, downloaded 834, added 832
+[WARN] Tarball download average speed 25 KiB/s (size 212 KiB) is below 50 KiB/s: https://registry.npmjs.org/@redocly/ajv/-/ajv-8.11.2.tgz (GET)
+Progress: resolved 1023, reused 0, downloaded 836, added 832
+Progress: resolved 1023, reused 0, downloaded 838, added 832
+Progress: resolved 1023, reused 0, downloaded 841, added 832
+Progress: resolved 1023, reused 0, downloaded 843, added 832
+[WARN] Tarball download average speed 49 KiB/s (size 69 KiB) is below 50 KiB/s: https://registry.npmjs.org/@testing-library/user-event/-/user-event-14.6.7.tgz (GET)
+Progress: resolved 1023, reused 0, downloaded 848, added 832
+Progress: resolved 1023, reused 0, downloaded 851, added 832
+[WARN] Request took 57338ms: https://registry.npmjs.org/lodash
+[WARN] Request took 36385ms: https://registry.npmjs.org/lucide-react
+Progress: resolved 1023, reused 0, downloaded 860, added 832
+Progress: resolved 1023, reused 0, downloaded 862, added 832
+Progress: resolved 1023, reused 0, downloaded 864, added 864
+Progress: resolved 1023, reused 0, downloaded 866, added 864
+Progress: resolved 1023, reused 0, downloaded 868, added 864
+Progress: resolved 1023, reused 0, downloaded 870, added 864
+Progress: resolved 1023, reused 0, downloaded 873, added 864
+Progress: resolved 1023, reused 0, downloaded 875, added 864
+Progress: resolved 1023, reused 0, downloaded 877, added 864
+Progress: resolved 1023, reused 0, downloaded 879, added 864
+Progress: resolved 1023, reused 0, downloaded 880, added 864
+Progress: resolved 1023, reused 0, downloaded 881, added 864
+Progress: resolved 1023, reused 0, downloaded 885, added 864
+[WARN] Request took 47352ms: https://registry.npmjs.org/node-releases
+Progress: resolved 1023, reused 0, downloaded 893, added 864
+Progress: resolved 1023, reused 0, downloaded 894, added 864
+[WARN] Request took 60895ms: https://registry.npmjs.org/next
+Progress: resolved 1023, reused 0, downloaded 896, added 896
+Progress: resolved 1023, reused 0, downloaded 897, added 896
+Progress: resolved 1023, reused 0, downloaded 899, added 896
+Progress: resolved 1023, reused 0, downloaded 901, added 896
+Progress: resolved 1023, reused 0, downloaded 902, added 896
+[WARN] Request took 49799ms: https://registry.npmjs.org/otplib
+Progress: resolved 1023, reused 0, downloaded 908, added 896
+Progress: resolved 1023, reused 0, downloaded 910, added 896
+Progress: resolved 1023, reused 0, downloaded 915, added 896
+Progress: resolved 1023, reused 0, downloaded 916, added 896
+[WARN] Request took 43743ms: https://registry.npmjs.org/pirates
+Progress: resolved 1023, reused 0, downloaded 922, added 896
+Progress: resolved 1023, reused 0, downloaded 924, added 896
+Progress: resolved 1023, reused 0, downloaded 926, added 896
+Progress: resolved 1023, reused 0, downloaded 927, added 896
+Progress: resolved 1023, reused 0, downloaded 928, added 928
+Progress: resolved 1023, reused 0, downloaded 929, added 928
+Progress: resolved 1023, reused 0, downloaded 930, added 928
+Progress: resolved 1023, reused 0, downloaded 931, added 928
+Progress: resolved 1023, reused 0, downloaded 933, added 928
+Progress: resolved 1023, reused 0, downloaded 935, added 928
+Progress: resolved 1023, reused 0, downloaded 938, added 928
+[WARN] Request took 45776ms: https://registry.npmjs.org/playwright-core
+Progress: resolved 1023, reused 0, downloaded 943, added 928
+[WARN] Request took 49593ms: https://registry.npmjs.org/playwright
+[WARN] Request took 39284ms: https://registry.npmjs.org/lodash
+Progress: resolved 1023, reused 0, downloaded 948, added 928
+Progress: resolved 1023, reused 0, downloaded 953, added 928
+Progress: resolved 1023, reused 0, downloaded 956, added 928
+Progress: resolved 1023, reused 0, downloaded 959, added 928
+Progress: resolved 1023, reused 0, downloaded 960, added 960
+Progress: resolved 1023, reused 0, downloaded 962, added 960
+Progress: resolved 1023, reused 0, downloaded 963, added 960
+Progress: resolved 1023, reused 0, downloaded 964, added 960
+Downloading @biomejs/cli-linux-x64@2.5.13: 0.00 B/23.87 MB
+Downloading @biomejs/cli-linux-x64@2.5.13: 895.08 kB/23.87 MB
+Downloading @img/sharp-libvips-linux-x64@1.3.4: 0.00 B/8.21 MB
+Downloading @img/sharp-libvips-linux-x64@1.3.4: 478.91 kB/8.21 MB
+Downloading @img/sharp-libvips-linux-x64@1.3.4: 1.90 MB/8.21 MB
+Downloading prisma@7.10.0: 0.00 B/14.17 MB
+Downloading @img/sharp-libvips-linux-x64@1.3.4: 3.48 MB/8.21 MB
+Downloading prisma@7.10.0: 2.45 MB/14.17 MB
+Downloading @img/sharp-libvips-linux-x64@1.3.4: 7.42 MB/8.21 MB
+Downloading prisma@7.10.0: 7.76 MB/14.17 MB
+Downloading prisma@7.10.0: 13.43 MB/14.17 MB
+Downloading @biomejs/cli-linux-x64@2.5.13: 15.58 MB/23.87 MB
+Downloading @biomejs/cli-linux-x64@2.5.13: 16.79 MB/23.87 MB
+Downloading @biomejs/cli-linux-x64@2.5.13: 18.66 MB/23.87 MB
+Downloading @biomejs/cli-linux-x64@2.5.13: 21.27 MB/23.87 MB
+Progress: resolved 1023, reused 0, downloaded 980, added 960
+Progress: resolved 1023, reused 0, downloaded 982, added 960
+Progress: resolved 1023, reused 0, downloaded 985, added 960
+[WARN] Request took 46219ms: https://registry.npmjs.org/prisma
+Progress: resolved 1023, reused 0, downloaded 991, added 960
+[WARN] Request took 50749ms: https://registry.npmjs.org/react-dom
+Downloading next@16.4.2: 0.00 B/43.67 MB
+Downloading next@16.4.2: 1.19 MB/43.67 MB
+Downloading next@16.4.2: 2.69 MB/43.67 MB
+Downloading next@16.4.2: 3.76 MB/43.67 MB
+Downloading next@16.4.2: 4.24 MB/43.67 MB
+Downloading next@16.4.2: 5.37 MB/43.67 MB
+Downloading next@16.4.2: 7.63 MB/43.67 MB
+Downloading next@16.4.2: 10.42 MB/43.67 MB
+Progress: resolved 1023, reused 0, downloaded 995, added 992
+Downloading next@16.4.2: 12.89 MB/43.67 MB
+Downloading next@16.4.2: 13.81 MB/43.67 MB
+Downloading next@16.4.2: 15.20 MB/43.67 MB
+[WARN] Request took 56594ms: https://registry.npmjs.org/react-resizable-panels
+[WARN] Request took 59111ms: https://registry.npmjs.org/react-is
+Progress: resolved 1023, reused 0, downloaded 1000, added 992
+Downloading next@16.4.2: 19.48 MB/43.67 MB
+Progress: resolved 1023, reused 0, downloaded 1003, added 992
+[WARN] Request took 59892ms: https://registry.npmjs.org/react
+Progress: resolved 1023, reused 0, downloaded 1004, added 992
+Downloading next@16.4.2: 25.25 MB/43.67 MB
+Downloading next@16.4.2: 28.75 MB/43.67 MB
+Downloading next@16.4.2: 30.83 MB/43.67 MB
+Downloading next@16.4.2: 33.11 MB/43.67 MB
+[WARN] GET https://registry.npmjs.org/next/-/next-16.4.2.tgz error (Failed to fetch https://registry.npmjs.org/next/-/next-16.4.2.tgz: error decoding response body: request or response body error: operation timed out) — 1
+Will retry in 10s. 1 retries left.
+[WARN] Tarball download average speed 31 KiB/s (size 50 KiB) is below 50 KiB/s: https://registry.npmjs.org/source-map/-/source-map-0.7.6.tgz (GET)
+Progress: resolved 1023, reused 0, downloaded 1009, added 992
+Progress: resolved 1023, reused 0, downloaded 1010, added 992
+Progress: resolved 1023, reused 0, downloaded 1011, added 992
+Progress: resolved 1023, reused 0, downloaded 1014, added 992
+[WARN] Tarball download average speed 21 KiB/s (size 45 KiB) is below 50 KiB/s: https://registry.npmjs.org/@prisma/client-runtime-utils/-/client-runtime-utils-7.10.0.tgz (GET)
+Progress: resolved 1023, reused 0, downloaded 1021, added 992
+[WARN] Request took 46592ms: https://registry.npmjs.org/signal-exit
+[WARN] Request took 63293ms: https://registry.npmjs.org/scheduler
+[WARN] Request took 84990ms: https://registry.npmjs.org/rollup
+Downloading next@16.4.2: 15.56 kB/43.67 MB
+Downloading next@16.4.2: 31.94 kB/43.67 MB
+Downloading next@16.4.2: 64.71 kB/43.67 MB
+Downloading next@16.4.2: 97.48 kB/43.67 MB
+Downloading next@16.4.2: 736.95 kB/43.67 MB
+Downloading next@16.4.2: 1.35 MB/43.67 MB
+Downloading next@16.4.2: 2.35 MB/43.67 MB
+Downloading next@16.4.2: 3.62 MB/43.67 MB
+Downloading next@16.4.2: 5.80 MB/43.67 MB
+Downloading next@16.4.2: 8.71 MB/43.67 MB
+Downloading next@16.4.2: 12.16 MB/43.67 MB
+[WARN] Request took 23513ms: https://registry.npmjs.org/react-resizable-panels
+[WARN] Request took 27964ms: https://registry.npmjs.org/tailwind-variants
+[WARN] Request took 23049ms: https://registry.npmjs.org/tsx
+Downloading next@16.4.2: 15.87 MB/43.67 MB
+[WARN] Request took 25931ms: https://registry.npmjs.org/react-is
+[WARN] Request took 31706ms: https://registry.npmjs.org/prisma
+Downloading next@16.4.2: 17.84 MB/43.67 MB
+Downloading next@16.4.2: 20.94 MB/43.67 MB
+Downloading next@16.4.2: 21.46 MB/43.67 MB
+Downloading next@16.4.2: 22.13 MB/43.67 MB
+Downloading next@16.4.2: 26.29 MB/43.67 MB
+Downloading next@16.4.2: 27.52 MB/43.67 MB
+Downloading next@16.4.2: 28.44 MB/43.67 MB
+Downloading next@16.4.2: 29.68 MB/43.67 MB
+Downloading next@16.4.2: 34.09 MB/43.67 MB
+Downloading next@16.4.2: 34.76 MB/43.67 MB
+[WARN] GET https://registry.npmjs.org/next/-/next-16.4.2.tgz error (Failed to fetch https://registry.npmjs.org/next/-/next-16.4.2.tgz: error decoding response body: request or response body error: operation timed out) — 2
+Will retry in 1m. 0 retries left.
+[WARN] Request took 38156ms: https://registry.npmjs.org/typescript
+[WARN] Request took 33946ms: https://registry.npmjs.org/use-sync-external-store
+[WARN] Request took 15629ms: https://registry.npmjs.org/yargs-parser
+[WARN] Request took 16104ms: https://registry.npmjs.org/y18n
+[WARN] Request took 16954ms: https://registry.npmjs.org/yargs
+[WARN] Request took 15724ms: https://registry.npmjs.org/use-sync-external-store
+[WARN] Request took 15153ms: https://registry.npmjs.org/y18n
+[WARN] Request took 15587ms: https://registry.npmjs.org/yargs
+[WARN] Request took 15718ms: https://registry.npmjs.org/yargs-parser
+✓ Lockfile passes supply-chain policies (1162 entries in 11m 44.3s)
+Lockfile is up to date, resolution step is skipped
+Downloading next@16.4.2: 625.00 B/43.67 MB
+Downloading next@16.4.2: 557.05 kB/43.67 MB
+Downloading next@16.4.2: 1.22 MB/43.67 MB
+Downloading next@16.4.2: 2.29 MB/43.67 MB
+Downloading next@16.4.2: 4.12 MB/43.67 MB
+Downloading next@16.4.2: 7.40 MB/43.67 MB
+Downloading next@16.4.2: 13.48 MB/43.67 MB
+Downloading next@16.4.2: 16.62 MB/43.67 MB
+Downloading next@16.4.2: 17.84 MB/43.67 MB
+Downloading next@16.4.2: 21.33 MB/43.67 MB
+Downloading next@16.4.2: 22.98 MB/43.67 MB
+Downloading next@16.4.2: 24.78 MB/43.67 MB
+Downloading next@16.4.2: 25.87 MB/43.67 MB
+Downloading next@16.4.2: 27.09 MB/43.67 MB
+Downloading next@16.4.2: 27.86 MB/43.67 MB
+Downloading next@16.4.2: 28.81 MB/43.67 MB
+Downloading next@16.4.2: 29.53 MB/43.67 MB
+Downloading next@16.4.2: 30.98 MB/43.67 MB
+Downloading next@16.4.2: 31.76 MB/43.67 MB
+Downloading next@16.4.2: 32.77 MB/43.67 MB
+Downloading next@16.4.2: 35.28 MB/43.67 MB
+Downloading next@16.4.2: 36.84 MB/43.67 MB
+Downloading next@16.4.2: 37.87 MB/43.67 MB
+Downloading next@16.4.2: 41.71 MB/43.67 MB
+Downloading next@16.4.2: 43.46 MB/43.67 MB
+Downloading next@16.4.2: 43.67 MB/43.67 MB, done
+Packages: +1023
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1023, reused 0, downloaded 1022, added 1023, done
+.../node_modules/@prisma/engines postinstall$ node scripts/postinstall.js

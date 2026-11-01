@@ -1,0 +1,157 @@
+$ cat .npmrc
+verify-deps-before-run=false
+$ pnpm run build:db   (prisma generate + build-prisma-client)
+Scope: all 3 workspace projects
+✓ Lockfile passes supply-chain policies (verified 12m ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1023
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1023, reused 1023, downloaded 0, added 1023, done
+.../node_modules/@prisma/engines postinstall$ node scripts/postinstall.js
+.../node_modules/@prisma/engines postinstall: Done
+.../node_modules/prisma preinstall$ node scripts/preinstall-entry.js
+.../node_modules/prisma preinstall: Done
+Done in 5.6s using pnpm v12.3.4
+$ npm-run-all generate:db:client build:prisma:client
+$ prisma generate
+Loaded Prisma config from prisma.config.ts.
+
+Prisma schema loaded from prisma/schema.prisma.
+
+✔ Generated Prisma Client (7.10.0) to ./src/generated/prisma in 579ms
+
+$ node scripts/build-prisma-client.js
+build:db exit: 0
+$ pnpm run check:db   (connect, version check, prisma migrate deploy)
+$ node scripts/check-db.js
+✓ DATABASE_URL is defined.
+✓ Database connection successful.
+✓ Database version check successful.
+Loaded Prisma config from prisma.config.ts.
+
+Prisma schema loaded from prisma/schema.prisma.
+Datasource "db": PostgreSQL database "umami", schema "public" at "127.0.0.1:55432"
+
+26 migrations found in prisma/migrations
+
+Applying migration `01_init`
+Applying migration `02_report_schema_session_data`
+Applying migration `03_metric_performance_index`
+Applying migration `04_team_redesign`
+Applying migration `05_add_visit_id`
+Applying migration `06_session_data`
+Applying migration `07_add_tag`
+Applying migration `08_add_utm_clid`
+Applying migration `09_update_hostname_region`
+Applying migration `10_add_distinct_id`
+Applying migration `11_add_segment`
+Applying migration `12_update_report_parameter`
+Applying migration `13_add_revenue`
+Applying migration `14_add_link_and_pixel`
+Applying migration `15_add_share`
+Applying migration `16_boards`
+Applying migration `17_remove_duplicate_key`
+Applying migration `18_add_performance`
+Applying migration `19_add_session_replay`
+Applying migration `20_add_heatmap`
+Applying migration `21_add_session_link`
+Applying migration `22_add_2fa`
+Applying migration `23_update_session_data`
+Applying migration `24_lowercase_username`
+Applying migration `25_add_annotation`
+Applying migration `26_add_api_key`
+
+The following migration(s) have been applied:
+
+migrations/
+  └─ 01_init/
+    └─ migration.sql
+  └─ 02_report_schema_session_data/
+    └─ migration.sql
+  └─ 03_metric_performance_index/
+    └─ migration.sql
+  └─ 04_team_redesign/
+    └─ migration.sql
+  └─ 05_add_visit_id/
+    └─ migration.sql
+  └─ 06_session_data/
+    └─ migration.sql
+  └─ 07_add_tag/
+    └─ migration.sql
+  └─ 08_add_utm_clid/
+    └─ migration.sql
+  └─ 09_update_hostname_region/
+    └─ migration.sql
+  └─ 10_add_distinct_id/
+    └─ migration.sql
+  └─ 11_add_segment/
+    └─ migration.sql
+  └─ 12_update_report_parameter/
+    └─ migration.sql
+  └─ 13_add_revenue/
+    └─ migration.sql
+  └─ 14_add_link_and_pixel/
+    └─ migration.sql
+  └─ 15_add_share/
+    └─ migration.sql
+  └─ 16_boards/
+    └─ migration.sql
+  └─ 17_remove_duplicate_key/
+    └─ migration.sql
+  └─ 18_add_performance/
+    └─ migration.sql
+  └─ 19_add_session_replay/
+    └─ migration.sql
+  └─ 20_add_heatmap/
+    └─ migration.sql
+  └─ 21_add_session_link/
+    └─ migration.sql
+  └─ 22_add_2fa/
+    └─ migration.sql
+  └─ 23_update_session_data/
+    └─ migration.sql
+  └─ 24_lowercase_username/
+    └─ migration.sql
+  └─ 25_add_annotation/
+    └─ migration.sql
+  └─ 26_add_api_key/
+    └─ migration.sql
+
+All migrations have been successfully applied.
+
+✓ Database is up to date.
+check:db exit: 0
+$ psql: list tables in the umami database
+                   List of relations
+ Schema |          Name          | Type  |    Owner    
+--------+------------------------+-------+-------------
+ public | _prisma_migrations     | table | umami_admin
+ public | annotation             | table | umami_admin
+ public | api_key                | table | umami_admin
+ public | app_setting            | table | umami_admin
+ public | board                  | table | umami_admin
+ public | event_data             | table | umami_admin
+ public | heatmap_event          | table | umami_admin
+ public | link                   | table | umami_admin
+ public | pixel                  | table | umami_admin
+ public | report                 | table | umami_admin
+ public | revenue                | table | umami_admin
+ public | segment                | table | umami_admin
+ public | session                | table | umami_admin
+ public | session_data           | table | umami_admin
+ public | session_link           | table | umami_admin
+ public | session_replay         | table | umami_admin
+ public | session_replay_saved   | table | umami_admin
+ public | share                  | table | umami_admin
+ public | team                   | table | umami_admin
+ public | team_user              | table | umami_admin
+ public | two_factor_auth        | table | umami_admin
+ public | two_factor_backup_code | table | umami_admin
+ public | two_factor_otp_used    | table | umami_admin
+ public | two_factor_rate_limit  | table | umami_admin
+ public | user                   | table | umami_admin
+ public | website                | table | umami_admin
+ public | website_event          | table | umami_admin
+(27 rows)
+

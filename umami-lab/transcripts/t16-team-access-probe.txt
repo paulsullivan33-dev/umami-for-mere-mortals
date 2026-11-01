@@ -1,0 +1,8 @@
+$ admin: GET /api/teams/<id>/websites (what the team holds)
+{"data":[],"count":0,"page":1,"pageSize":20}
+$ committee: GET /api/me/teams
+{"data":[{"id":"8aefdb6a-a9f5-45be-a461-5a22b4881324","name":"Example Committee","accessCode":"team_oaeQvz7sT35I9mz4","logoUrl":null,"twoFactorRequired":false,"createdAt":"2026-11-01T03:07:22.633Z","updatedAt":"2026-11-01T03:07:22.633Z","deletedAt":null,"members":[{"id":"1fa68da9-55d7-4cea-9935-1be02817b28a","teamId":"8aefdb6a-a9f5-45be-a461-5a22b4881324","userId":"41e2b680-648e-4b09-bcd7-3e2b10c06264","role":"team-owner","createdAt":"2026-11-01T03:07:22.635Z","updatedAt":"2026-11-01T03:07:22.635Z","user":{"id":"41e2b680-648e-4b09-bcd7-3e2b10c06264","username":"admin"}},{"id":"1c8008b9-880a-4858-b1d1-a3a907ff39dd","teamId":"8aefdb6a-a9f5-45be-a461-5a22b4881324","userId":"75cc41b0-0148-4869-b37f-ef6bdb12f90f","role":"team-view-only","createdAt":"2026-11-01T03:07:31.421Z","updatedAt":"2026-11-01T03:07:31.421Z","user":{"id":"75cc41b0-0148-4869-b37f-ef6bdb12f90f","username":"committee"}}],"_count":{"websites":0,"members":2}}],"count":1,"page":1,"pageSize":20}
+$ committee: GET /api/websites/<id>/stats directly (can they read the numbers?)
+{"error":{"message":"Unauthorized","code":"unauthorized","status":401}}
+$ committee: GET /api/teams/<id>/websites
+{"data":[],"count":0,"page":1,"pageSize":20}
